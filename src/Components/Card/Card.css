@@ -1,0 +1,62 @@
+.card {
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    /* column-gap: 0rem;
+    row-gap: 0.30rem; */
+    align-items: center;
+    width: 10rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--orangeCard);
+    box-shadow: 20px;
+    border-radius: 20px;
+    padding: 0px 26px 2px 26px;
+    flex-flow: column;
+    /* white-space: initial;
+    word-wrap: break-word; */
+    /* overflow-wrap: break-word; */
+    
+}
+.card{
+    position: relative;
+    animation: card 3s infinite;
+    
+}
+
+@keyframes card {
+    0%   { left:0rem; top:0rem;}
+    25%  { left:15rem; top:0rem;}
+    50%  { left:0rem; top:0rem;}
+  }
+
+.card span:nth-of-type(2){
+    color: var(--gray);
+    font-size: 17px;
+    
+}
+
+.card > :nth-child(1){
+    transform: scale(0.6);
+    margin-bottom: -2.5rem;
+    
+}
+
+.card > :nth-child(4){
+    font-weight: bold;
+    
+}
+
+.c-button{
+    background: white;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08 );
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290fd;
+}
+
